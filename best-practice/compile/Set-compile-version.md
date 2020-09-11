@@ -34,7 +34,7 @@ Alternative, configure the plugin directly.
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.6.1</version>
+            <version>3.8.1</version>
             <configuration>
                 <source>1.8</source>
                 <target>1.8</target>
@@ -60,11 +60,16 @@ Alternative, configure the plugin directly.
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.1</version>
+            <version>3.8.1</version>
             <configuration>
                 <source>${java.version}</source>
                 <target>${java.version}</target>
-                <compilerArgument>-parameters</compilerArgument>
+                <fork>true</fork>
+                <compilerArgs>
+                    <arg>-g:none</arg>
+                    <arg>-parameters</arg>
+                    <arg>-XDignore.symbol.file</arg>
+                </compilerArgs>
             </configuration>
         </plugin>
     </plugins>

@@ -2,7 +2,6 @@
 
 URL: https://stackoverflow.com/questions/8563960/maven-command-to-update-repository-after-adding-dependency-to-pom
 
-
 If you want to **only** download dependencies without doing anything else, then it's:
 
 ```bash

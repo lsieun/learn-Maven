@@ -8,7 +8,7 @@ URL:
 The compiler plugin is used to compile the source code. This has two goals: `compile` and `testCompile` . The `compile` goal is bound to the `compile` phase of the Maven `default` lifecycle.
 
 ```bash
-$ mvn help:describe -Dplugin=compiler
+mvn help:describe -Dplugin=compiler
 ```
 
 ## two way to execute
@@ -18,7 +18,7 @@ When you type `mvn clean install`, Maven will execute all the phases in the `def
 The following command shows how to execute the `compile` goal of the `compiler` plugin by itself. This will simply compile your source code:
 
 ```bash
-$ mvn compiler:compile
+mvn compiler:compile
 ```
 
 ## bindings

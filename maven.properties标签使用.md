@@ -35,7 +35,7 @@ properties顾名思义就是配置文件,这里的peoperties是管理jar包的�
     <groupId>org.springframework</groupId>  
     <artifactId>spring-beans</artifactId>  
     <version>${org.springframework.version}</version>  
-</dependency> 
+</dependency>
 ```
 
 当我们的某一个文件出现了像如上所写的，版本号被重复使用的话，我们可以规范起来，把版本号写进peoperties文件，然后后面直接引用，这样对于查看和维护来说是非常方便的
